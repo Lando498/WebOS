@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <script>
+
+        function updateTime() {
+            var currentTime = new Date().toLocaleString();
+            var timeText = document.querySelector("#timeElement");
+            timeText.innerHTML = currentTime;
+        }
+        setInterval(updateTime, 1000);
+    
+      </script>
+<body style="background-image: url(./DSC00796.JPG); background-size: cover;height: 100vh;">
+<div id="welcome"
+ style="border: solid;border-width: 2px;width: fit-content;border-radius: 10px;padding: 5px;position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%); backdrop-filter: blur(15px); display:unset;">
+ <div id="welcomeheader" style="border: solid; width: 505px; border-radius: 10px; position: absolute; left: -0.5%; top: -1%; height: 30px;display: flex;justify-content: flex-end;">
+    <p class="closebutton" id="welcomeclose" style="cursor: pointer;padding-right: 5px; margin-top: 7px;" >‎ Close</p>
+ </div>   
+ <h1 style="padding-top: 35px;">Welcome to my OS</h1>
+  <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=51870&api_domain=hackatime.hackclub.com&theme=darcula&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8" style="border-radius: 16px; object-fit: cover"/>  
+  <p style = "font-size: larger;"> I like VB.net</p>
+  <a href="https://open.spotify.com/playlist/0z9N5tItVITApIxRMur7yC">My playlist</a>
+</div>
+<div id="top"
+style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(85, 41, 24, 0.125); color: #533823; justify-content: space-between; gap: 32px;">
+    <p id="welcomeopen"
+      style="cursor: pointer;margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+        LewOS
+    </p>
+    <p id="timeElement"
+      style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px; font-weight: 700">
+        
+    </p>
+</div>
+<head>
+    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+</body>
+<div id="desktopApps" style="padding-top: 64px;">
+    <div id="notesicon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+        <img src="./notes.jpg" style="width: 64px; height: 64px; border-radius: 16px;">
+        <p style="margin: 0px; color: #533823;">Notes</p>
+      </div>
+  </div>
+  <div id="notes"
+  style="border: solid;border-width: 2px;width: 600px;height: 400px;border-radius: 10px;padding: 5px;position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%); backdrop-filter: blur(15px); display:none; justify-content: baseline;">
+  <div id="notesheader" style="border: solid;border-width: 2px;width: 1000px;height: 40px;border-radius: 10px; backdrop-filter: blur(15px); margin-top: -7px;margin-left: -6px; margin-right: -6px; display: flex; justify-content: flex-end;">
+    <p id="notesclose"class="closebutton" style="cursor: pointer; margin-top: 9px; width: 40px; height: 20px;">Close</p>
+  </div>
+  </div>
+  
+</html>
